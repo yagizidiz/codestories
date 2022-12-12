@@ -11,12 +11,15 @@ class RootPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //RootPage returns different values depending on the state of our bloc.
     return BlocBuilder<StoryBloc, StoryState>(builder: (context, state) {
+      //If our stories are not being watched or loaded yet initial state displays a feed page with dummy posts and stories with no functionality.
       if (state is StoryInitialState) {
         return const TabbarPage(
           title: 'Codegram',
           children: [
             FeedPage(
+              //loaded bool makes story Circles dummy here
               loaded: false,
             ),
             ReelsPage(),
@@ -26,11 +29,14 @@ class RootPage extends StatelessWidget {
           ],
         );
       }
+      //After we open the app an event to load and initialize stories in videcontrollers is triggered, when this event finishes it's work this state is emitted.
+      //It let us display the new feed page with clickable story circles linked to loaded story player page view.
       if (state is StoriesLoadedState) {
         return const TabbarPage(
           title: 'Codegram',
           children: [
             FeedPage(
+              //loaded boool makes story circles clickable and functional
               loaded: true,
             ),
             ReelsPage(),
@@ -39,6 +45,8 @@ class RootPage extends StatelessWidget {
             AccountPage(),
           ],
         );
+        //When a story is clicked, this state is being emitted, It directly displays the cubic story page with loaded stories inside it.
+        //story data is inside state object as attributes.
       } else if (state is StoryWatchingState) {
         return CubicPageSwiper(
             currentUser: state.user,

@@ -1,6 +1,6 @@
 import 'package:codestories/models/story_model.dart';
 import 'package:codestories/models/user_model.dart';
-
+//dummy story and user lists.
 final userProfileList = [
   const User(
       userName: 'user1', profilePictureUrl: 'https://picsum.photos/200/300'),

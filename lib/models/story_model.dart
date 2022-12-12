@@ -1,5 +1,5 @@
 import 'package:video_player/video_player.dart';
-
+//Data model for story object
 enum MediaType { image, video }
 
 class Story {

@@ -2,7 +2,8 @@ import 'package:codestories/blocs/story_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:codestories/models/user_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+//The functional and clickable story circle with a gradient that shows stories are loaded, click on the story triggers
+//an event of the bloc so new states make the bloc builder display cubic story page.
 class StoryCircle extends StatelessWidget {
   final User user;
 

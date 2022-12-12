@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//Dummy post sample to display on feed page
 class UserPosts extends StatelessWidget {
   const UserPosts({Key? key}) : super(key: key);
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//A single script for all of the dummy pages in our tabbar which are not functional
 class AccountPage extends StatelessWidget {
   const AccountPage({Key? key}) : super(key: key);
 

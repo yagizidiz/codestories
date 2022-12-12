@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:codestories/models/user_model.dart';
-
+//One of the two different story circle, this one is dummy without a gradient surrounding, not clickable and functional just here to be displayed until stories are loaded.
 class LoadingCircle extends StatefulWidget {
   final User user;
 

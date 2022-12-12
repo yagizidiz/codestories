@@ -1,9 +1,9 @@
 part of 'story_bloc.dart';
-
+//Story Bloc Events
 @immutable
 abstract class StoryEvent extends Equatable {
   const StoryEvent();
-
+//Overriding the equation operation with equatable package to have a value type approach
   @override
   List<Object> get props => [];
 }

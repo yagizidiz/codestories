@@ -1,4 +1,4 @@
-
+//Data model for user object
 class User {
   final String userName;
   final String profilePictureUrl;

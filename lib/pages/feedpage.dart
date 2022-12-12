@@ -3,7 +3,7 @@ import 'package:codestories/utils/dummyPost.dart';
 import 'package:codestories/utils/storiesLoadingCircle.dart';
 import 'package:codestories/utils/storyCircle.dart';
 import 'package:flutter/material.dart';
-
+// Our only functional page in Tab Bar is the feedpage, it displays dummy posts and two different type of the stories depended on the bool "loaded"
 class FeedPage extends StatelessWidget {
   final bool loaded;
 
